@@ -1,8 +1,10 @@
+package org.bero.v0;
+
 import java.util.Scanner;
 
-public class Main{
+public class GroceryV0 implements Runnable {
 
-    public static void main(String[] args) {
+    public void run() {
 
         String[] products = {"Хлеб", "Молоко", "Макароны"};
         int[] prices = {50, 200, 300};
@@ -16,6 +18,7 @@ public class Main{
             System.out.println("Кажется вы забыли зачем пришли :)");
         }
     }
+
     public static int[] visitMarket(int productsLength){
         Scanner scanner = new Scanner(System.in);
         int[] productsCount = new int [productsLength];
@@ -41,9 +44,3 @@ public class Main{
         return sum;
     }
 }
-/*Вы пишете программу, планирующую продуктовую корзину.
-У вас есть список доступных продуктов в одном массиве и соответствующая им цена в другом массиве.
-Пользователь вводит номер продукта из первого списка и количество продуктов этого вида, которое хочет купить.
-Программа добавляет указанное количество выбранного продукта в итоговую сумму продуктовой корзины.
-Действие повторяется до тех пор, пока пользователь не введет команду "end".
-Только после этого выводится вся корзина выбранных товаров и итоговая сумма.*/
