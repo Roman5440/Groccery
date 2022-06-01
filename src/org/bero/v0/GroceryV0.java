@@ -1,11 +1,13 @@
 package org.bero.v0;
 
+import org.bero.general.VersionedGrocery;
+
 import java.util.Scanner;
 
-public class GroceryV0 implements Runnable {
+public class GroceryV0 implements VersionedGrocery {
 
-    public void run() {
-
+    @Override
+    public void simulate() {
         String[] products = {"Хлеб", "Молоко", "Макароны"};
         int[] prices = {50, 200, 300};
         for(int i = 0; i < products.length; i++){
