@@ -17,10 +17,10 @@ public class Main{
         }
     }
     public static int[] visitMarket(int productsLength){
-
+        Scanner scanner = new Scanner(System.in);
         int[] productsCount = new int [productsLength];
         while(true) {
-            Scanner scanner = new Scanner(System.in);
+
             System.out.println("Введите номер товара и его количество или слово end");
             String input = scanner.nextLine();
             if (input.equals("end")) break;
